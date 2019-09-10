@@ -1,0 +1,456 @@
+/* Forme principale du site */
+
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Forme principale du menu */
+
+header{
+	width: 100%;
+	height: 80px;
+	top: 0px;
+	background-color: #fff;
+	opacity: 0.9;
+	z-index: 1;
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+}
+
+/* Positionnement du logo */
+
+#logo{
+	margin-left: 200px;
+}
+
+/* Organisation des liens du menu */
+
+nav{
+	margin-right: 200px;
+}
+
+nav ul{
+	padding-left: 0;
+}
+
+nav ul li{
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 28px;
+	display: inline;
+	transition-duration: 0.8s;
+}
+
+nav ul li:hover{
+	box-shadow: 0px -4px 0px #4EB1D5;
+}
+
+nav ul li a{
+	color: black;
+	text-decoration: none;
+}
+
+/* Mise en place du Hamburger pour mobiles */
+
+#change{
+	display: none;
+	box-sizing: border-box;
+}
+
+/* Forme principale du slider */
+
+#slider{
+	width: 100%;
+	height: 550px;
+	margin-top: 80px;
+	background-image: url('images/slider/bg1.jpg');
+	background-size: cover;
+	overflow: hidden;
+	position: relative;
+}
+
+/* Mise en forme des FontAwesome et textes du slider */
+
+#text{
+    width: 100%;
+    top: 180px;
+    left: 100px;
+    position: absolute;
+    
+}
+
+#slider h1{
+	width: 600px;
+	color: white;
+	margin: 0;
+}
+
+strong{
+	color: #4EB1D5;
+}
+
+#text p{
+	margin-bottom: 30px;
+	color: white;
+	text-decoration: none;
+}
+
+#text a{
+	color: white;
+	text-decoration: none;
+	padding: 10px 10px 10px;
+	background-color: #4EB1D5;
+	border-radius: 3px;
+	box-shadow: 0px 2px 2px #3498db;
+	transition-duration: 0.8s;
+}
+
+#text a:hover{
+	color: #4EB1D5;
+	background-color: white;
+}
+
+#cercle-gauche{
+    width: 50px;
+    height: 50px;
+    right: 25px;
+    background: black;
+    opacity: 0.6;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    position: relative;
+}
+
+#cercle-droite{
+    width: 50px;
+    height: 50px;
+    left: 25px;
+    background: black;
+    opacity: 0.6;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    position: relative;
+}
+
+#fleche-gauche{
+    float: left;
+    position: absolute;
+    top: 260px;
+}
+
+#fleche-droite{
+	top: 260px;
+    right: 0px;
+    float: right;
+    position: absolute;
+}
+
+.fas.fa-chevron-left{
+	bottom: 35px;
+    left: 2px;
+    font-size: 20px;
+    color: white;
+    position: relative;
+}
+
+.fas.fa-chevron-right{
+	bottom: 35px;
+    left: 35px;
+    font-size: 20px;
+	color: white;
+    position: relative;
+    
+}
+
+/* Mise en forme du trait du slider (Barre de chargement off) */
+
+#trait{
+    height: 5px;
+    width: 250px;
+    bottom: 0px;
+    background-color: #4EB1D5;
+    position: absolute;
+}
+
+/* Mise en forme des présentations des différentes parties du site */
+
+.titre h2{
+	text-align: center;
+}
+
+.titre p{
+	width: auto;
+	margin: auto;
+	display: block;
+	text-align: center;
+}
+
+.point_trait{
+	display: flex;
+	justify-content: center;
+}
+
+.trait{
+	width: 150px;
+	height: 1px;
+	margin-bottom: 15px;
+	background-color: #EBEBEB;
+}
+
+.fas.fa-circle{
+	width: 12px;
+	font-size: 12px;
+	bottom: 12px;
+	left: 60px;
+	background-color: white;
+	color: #4EB1D5;
+	border: 6px solid white;
+	border-radius: 50%;
+	position: relative;
+	
+}
+
+/* Mise en forme général de la partie "Nos Services" */
+
+#nos_services{
+	padding: 30px 5px 30px 5px;
+}
+
+#services{
+	display: flex;
+	justify-content: space-around;
+}
+
+#pc{
+	margin-top: 40px;
+	transition-duration: 0.8s;
+}
+
+#pc:hover{
+	transform: scale(1.2);
+}
+
+#desc{
+	margin-top: 35px;
+	display: flex;
+	flex-direction: column;
+	
+}
+
+/* Mise en place des FontAwesome (logo devant les h3) */
+
+span.ico_services.fa-2x{
+	margin: 20px 30px 20px 0px;
+	float: left;
+}
+
+.ico_services{
+	width: 2em;
+	height: 2em;
+	line-height: 2em;
+	vertical-align: middle;
+	display: inline-block;
+	position: relative;
+}
+
+.far.fa-circle{
+	border: 1px solid gray;
+	border-radius: 50%;
+	color: white;
+}
+
+.fas.fa-chart-line, .fas.fa-cubes, .fas.fa-chart-pie{
+	color: #4EB1D5;
+}
+
+.ico_services.fa-2x .fas.fa-circle{
+	top: 22px;
+	left: 50px;
+	font-size: 15px;
+	position: absolute;
+}
+
+/* Mise en forme général de la partie "Nos Projets" */
+
+#nos_projets{
+	padding-top: 30px;
+	background-color: #F5F5F5;
+}
+
+/* Mise en forme du menu de la partie "Nos Projets" */
+
+#menu_portfolio{
+	margin: 40px 0px 40px 0px;
+	display: flex;
+	justify-content: center;
+}
+
+#menu ul{
+	padding: 5px 0px 15px 0px;
+	border-radius: 5px;
+	background-color: #E5E5E5;
+	list-style-type: none;
+}
+
+#menu ul li{
+	padding: 16px 0px 15px 15px;
+	display: inline;
+	transition-duration: 0.8s;
+}
+
+#menu ul li a{
+	color: #76797E;
+	text-decoration: none;
+	transition-duration: 0.8s;
+}
+
+#menu li .fas.fa-caret-down{
+	top: 36px;
+	right: 37px;
+	font-size: 30px;
+	opacity: 0;
+	color: #468CAD;
+	position: relative;	
+	transition-duration: 0.8s;
+}
+
+/* Mise en place de l'affichage au survol du menu */
+
+#menu li:hover{
+	box-shadow: 0px 4px 0px #468CAD;
+	background-color: #4EB1D5;
+}
+
+#menu ul li:first-child{
+	border-radius: 5px 0 0 5px;
+}
+
+#menu ul li:last-child{
+	border-radius: 0 5px 5px 0;
+}
+
+#menu li:hover a{
+	color: #fff;
+}
+
+#menu li:hover .fas.fa-caret-down{
+		opacity: 1;
+}
+
+/* Mise en forme des images du Portfolio */
+
+#portfolio{
+	padding-bottom: 40px;
+	justify-content: center;
+	display: flex;	
+	flex-wrap: wrap;
+	
+}
+
+/* Mise en place de l'affichage au survol des images */
+
+figure{
+	height: 233px;
+	position: relative;
+}
+
+figure img{
+	width: 350px;
+}
+
+figcaption{
+	width: 350px;
+	bottom: 0px;
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	visibility: hidden;
+	position: absolute;
+}
+
+figcaption h3, figcaption p{
+	margin-left: 20px;
+}
+
+figure:hover figcaption{
+	visibility: visible;
+}
+
+.eye{
+	height: 30px;
+	width: 30px;
+	top: -15px;
+	right: 15px;
+	background-color: #4EB1D5;	
+	border-style: solid;
+	border-width: 2px;
+	border-color: white;
+	border-image: initial;
+	border-radius: 50%;
+	position: absolute;
+}
+
+.far.fa-eye{
+	top: 6px;
+	left: 8px;
+	font-size: 13px;
+	position: relative;
+}
+
+/* Mise en place de la partie "Nous Contacter" */
+
+#contact{
+	position: relative;
+}
+
+/* Mise en place de la map */
+
+#contact #map{
+	width: 100%;
+	padding-bottom: 48%;
+	margin-top: 25px;
+	background: #4eb1d5;
+	overflow: hidden;
+	position: relative;
+	
+}
+
+#contact iframe{
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0.7;
+	position: absolute;
+}
+	
+
+/* Mise en place du formulaire de contact */
+
+#bg_formulaire{
+	z-index: 100;
+}
+
+#contact #bg_formulaire{
+	padding: 15px;
+	opacity: 0.8;
+	background-color: #ecf0f1;
+}
+
+#pseudo, #email, #sujet, #message{
+	width: 100%;
+	opacity: 1;
+}
+
+input[type="submit"] {
+	margin-left: 10px;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: #4EB1D5;
+    color: white;
+}
